@@ -1,0 +1,11 @@
+import random
+
+karakterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+uzunluk = int(input("Şifrenin kaç hane uzunluğunda olmasını istiyorsunuz?"))
+
+sifre = ""
+
+for i in range(uzunluk):
+    sifre += random.choice(karakterler)
+print("Şifre:" + sifre)
